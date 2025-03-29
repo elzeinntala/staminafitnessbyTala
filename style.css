@@ -393,18 +393,15 @@ body {
 
 .footer-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: flex-start;
-  flex-wrap: wrap;
   padding: 40px 40px;
   background-color: #ffffff;
   border-top: 1px solid #e5e5e5;
-  gap: 2rem;
+  gap: 3rem;
   font-size: 16px;
   line-height: 1.6;
 }
-
   
   .footer-logo img {
     width: 40px;
@@ -506,7 +503,7 @@ body {
 }
 
 .footer-col form .btn {
-  width: 100%;
+  width: 1200px;
   padding: 15px;
   background: #E5E4E2;
   border: 2px solid #E5E4E2;
@@ -654,23 +651,27 @@ body {
   }
 
   .plans-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 2.3rem;
-    margin-top: 20px;
-    padding: 0 20px;
+    justify-content: center;
   }
-
-  .box{
+  
+  .box {
     background: #e5e5e5;
     padding: 30px;
-    border-radius: 20px;
+    border-radius: 40px;
     box-shadow: 0 0 10px lightcyan;
     text-align: center;
-    border-radius: 40px;
     transition: all 0.5s ease;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 280px;
+    max-width: 350px;
+    height: 100%;
   }
+
 
   .box h3{ 
     font-size: 20px;
@@ -1282,6 +1283,10 @@ body {
 
   .footer-col form {
     align-items: stretch;
+  }
+
+  .footer-col form .btn {
+    max-width: 500px;
   }
 
 
